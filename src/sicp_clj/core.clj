@@ -77,3 +77,58 @@
 ;; Exercise 1.5
 
 ;;"Newton's Method for Square Roots"
+(defn abs [x] (if (< x 0) (- 0 x) x))
+
+
+
+
+(defn good-enough? [guess x]
+  (< (abs (- (square guess) x)) 0.001))
+(defn average [x y]
+  ( / (+ x y) 2))
+(defn sqrt-iter [guess x]
+  (defn improve [guess x]
+    (average guess (/ x guess)))
+  (if (good-enough? guess x)
+    guess
+    (recur (improve guess x)
+           x)))
+
+(defn sqrt [x] (sqrt-iter 1.0 x))
+
+(sqrt 100)
+;;end
+
+;;Exercise 1.6
+(defn new-if [predicate then-clause else-clause]
+  (cond predicate then-clause
+        :else else-clause))
+(new-if (= 2 3) 0 5)
+
+;;(defn new-sqrt-iter [guess x]
+;;  (new-if (good-enough? guess x)
+;;        guess
+;;        (recur (improve guess x)
+;;                   x)))
+
+;;(defn new-sqrt [x] (new-sqrt-iter 1.0 x))
+
+;; Exercise 1.7
+
+
+;;
+
+;; Exercise 1.8
+(defn cube-good-enough? [guess x]
+  (< (abs (- (* guess guess guess) x)) 0.001))
+
+(defn cube-improve [guess x]
+  (/ (+ (/ x (square guess)) (* 2 guess)) 3))
+
+(defn cube-iter [guess x]
+  (if (cube-good-enough? guess x)
+   guess
+   (recur (cube-improve guess x) x)))
+
+(cube-iter 1 8)
+(type 100)
