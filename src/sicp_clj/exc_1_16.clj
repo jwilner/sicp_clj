@@ -12,4 +12,4 @@
 (defn it-exp [b n]
   (iter-exponent 1 b n))
 
-(it-exp 2 8)
+(it-exp 3 7)
