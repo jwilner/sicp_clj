@@ -4,9 +4,15 @@
 (defn expmod
   "computes the remainder for 'base' to the 'exp' modulo 'm'" 
   [base exp m]
-  (cond (= exp 0) 0
-        (even? exp) (mod (square (expmod base (/ exp 2) m)) m)
-        :else (mod (* base (expmod base (dec exp) m)) m)))
+  (cond (zero? exp) 0
+        (even? exp) (mod 
+                      (square (expmod base (/ exp 2) m)) 
+                      m)
+        :else       (mod 
+                      (* base (expmod base (dec exp) m))
+                      m)))
+
+(expmod 4 5 3)
 
 (defn fermat-test 
   "If 'n' is a prime number and 'a' is any positive integer less than 'n',
@@ -19,7 +25,7 @@
 
 (defn fast-prime? [n times]
   "fast-prime iterative function using the fermat-test"
-  (cond (= times 0) true
+  (cond (zero? times) true
         (fermat-test n) (fast-prime? n (dec times))
         :else false))
 

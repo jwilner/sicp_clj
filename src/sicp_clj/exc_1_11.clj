@@ -14,7 +14,6 @@
 (f 7);142
 
 (defn f-wrap [n]
-  (do
     (defn f-iter [cnt acc f1 f2 f3]
       (if (= cnt n)
         acc
@@ -27,7 +26,7 @@
           f2)))
     (if (< n 3)
        n
-      (f-iter 3 4 2 1 0))))
+      (f-iter 3 4 2 1 0)))
 
 (f-wrap 4)
 (f-wrap 6)

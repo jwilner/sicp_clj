@@ -4,8 +4,7 @@
 (defn fib 
   "Calculates a fib number in log n time thanks to some obscure math stuff"
   [n]
-  (do 
-    (defn fib-iter [a b p q le_count]
+  (defn fib-iter [a b p q le_count]
       (cond (zero? le_count) b
             (even? le_count) (recur a 
                                     b 
@@ -17,7 +16,7 @@
                                     p
                                     q
                                     (dec le_count))))
-   (fib-iter 1 0 0 1 n)))
+   (fib-iter 1 0 0 1 n))
 
 (fib 91)
 

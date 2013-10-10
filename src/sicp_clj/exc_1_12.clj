@@ -8,14 +8,12 @@
              (pascal (dec x) y))))
 
 (defn p [limit]
-  (do 
     (defn p-loop [row col]
-      (do
         (println (pascal row col))
         (cond
           (and (= row limit) (= col limit)) nil
           (= row col) (p-loop (inc row) 0)
-          :else (p-loop row (inc col)))))
-    (p-loop 0 0)))
+          :else (p-loop row (inc col))))
+    (p-loop 0 0))
 
 (p 4)
