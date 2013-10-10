@@ -11,11 +11,10 @@
 (defn new-euclid-gcd 
   "Busted GCD thanks to normal order expansion"
   [a b]
-  (do 
     (println a b)
     (new-if (= b 0)
       a
-      (new-euclid-gcd b (mod a b)))))
+      (new-euclid-gcd b (mod a b))))
 
 (euclid-gcd 206 40)
 (euclid-gcd 40 6)
