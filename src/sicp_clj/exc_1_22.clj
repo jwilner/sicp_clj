@@ -27,11 +27,29 @@
             (prn "Prime") 
             (recur (inc n) num-to-find func (inc counter)))
           (do
-           (prn "No") (recur (inc n) num-to-find func counter)))))))
+            (prn "No") 
+            (recur (inc n) num-to-find func counter)))))))
 
 (defn prime-search-wrap [prime-test]
   (doseq [a (range 3 7)]
     (search-for-primes (fast-expt 10 a) 3 prime-test)))
 
-(defn main [] (prime-search-wrap naive-prime?))
+(defn -main [] (prime-search-wrap naive-prime?))
 
+(defn alt-search
+  [n num-to-find func]
+  (loop [m n 
+         counter 0]
+    (if (= num-to-find counter)
+      (prn "Done")
+      (do 
+          (pr (str m))
+        (if (time (func m))
+         (do
+          (prn "Prime")
+          (recur (inc m) (inc counter)))
+         (do
+          (prn "No")
+          (recur (inc m) counter)))))))
+
+(alt-search (fast-expt 10 6) 3 naive-prime?) 

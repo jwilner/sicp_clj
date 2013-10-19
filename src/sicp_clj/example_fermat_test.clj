@@ -2,7 +2,8 @@
   (:use [sicp-clj.exc_1_3 :only [square]]))
 
 (defn expmod
-  "computes the remainder for 'base' to the 'exp' modulo 'm'" 
+  "computes the remainder for 'base' to the 'exp' modulo 'm' in 
+  logarithmic time and space (?)" 
   [base exp m]
   (cond (zero? exp) 1
         (even? exp) (mod 
@@ -32,3 +33,5 @@
 (fermat-test 17)
 
 (fast-prime? 17 5)
+
+(fast-prime? 10 5)

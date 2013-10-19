@@ -5,4 +5,4 @@
 (defn fast-prime-fermat [n]
   (fast-prime? n 3))
 
-(defn main [] (prime-search-wrap fast-prime-five?))
+#_(defn main [] (prime-search-wrap fast-prime-five?))

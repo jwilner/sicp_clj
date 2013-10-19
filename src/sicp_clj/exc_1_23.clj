@@ -14,4 +14,4 @@
   [n]
   (= n (smallest-divisor n next-test-divisor)))
 
-(defn main [] (prime-search-wrap somewhat-better-prime?))
+(defn -main [] (prime-search-wrap somewhat-better-prime?))
