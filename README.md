@@ -1,10 +1,6 @@
 # sicp_clj
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+Exercises from the *Structure and Interpretation of Computer Programs* done in amateurish Clojure.
 
 ## License
 
