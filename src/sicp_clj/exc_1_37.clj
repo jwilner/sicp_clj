@@ -1,6 +1,6 @@
 (ns sicp-clj.exc_1_37)
 
-(defn always-one [x] 1)
+(defn always-one [x] 1.0)
 
 (defn rec-cont-frac [n d k i]
   (if (> i k)
@@ -11,9 +11,19 @@
 
 (defn cont-frac [n d k]
   (loop [i k
-         acc 0.0]
+         acc 1.0]
     (if (zero? i)
-      acc
-      (recur (dec i) (/ (n i) (+ acc (d i)))))))
+        acc
+        (recur (dec i) (/ (n i) (+ acc (d i)))))))
 
-(cont-frac always-one always-one 11)
+(defn cont-frac-iter [n d k]
+  (do
+    (defn cont-frac-inner [i acc]
+      (if (zero? i)
+        acc
+        (recur (dec i) (/ (n i) (+ acc (d i))))))
+    (cont-frac-inner k 0.0)))
+
+
+(cont-frac always-one always-one 10)
+(rec-cont-frac always-one always-one 11 0)

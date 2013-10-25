@@ -16,3 +16,4 @@
 (fixed-point-print #(/ (+ (/ 4 %) %) 2) 1.0)
 (fixed-point-print #(+ 1 (/ 1 %)) 2.0)
 (fixed-point-print #(/ (Math/log 1000) (Math/log %)) 5.0)
+(fixed-point-print #(/ (Math/log 1000) (Math/log %)) 2.0)
