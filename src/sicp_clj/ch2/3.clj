@@ -1,5 +1,4 @@
-(ns sicp-clj.exc_2_3
-  (:use [sicp-clj.exc_2_2])
+(ns sicp-clj.ch2.3
   (import java.lang.Math))
 
 (defn make-rect [a b c d]

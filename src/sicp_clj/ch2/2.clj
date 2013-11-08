@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_2_2)
+(ns sicp-clj.ch2.2)
 
 (defn make-point [x y]
   (list x y))

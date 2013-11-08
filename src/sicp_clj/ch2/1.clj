@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_2_1 
+(ns sicp-clj.ch2.1 
   (:import (java.lang.Math)))
 
 (defn make-rat [n d]

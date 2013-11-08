@@ -1,4 +1,4 @@
-(ns sicp-clj.ch2.exc10 )
+(ns sicp-clj.ch2.10 )
 
 (defn div-interval [x y]
   (let [zero-or-error #(if (zero? %)

@@ -1,5 +1,5 @@
-(ns sicp-clj.ch2.exc8
-  (:use [sicp-clj.ch2.exc7 [make-interval lower-bound upper-bound]]))
+(ns sicp-clj.ch2.8
+  (:use [sicp-clj.ch2.7 [make-interval lower-bound upper-bound]]))
 
 (defn sub-interval [a b]
   (let [lower-order (make-interval (lower-bound a) (lower-bound b))

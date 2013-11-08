@@ -1,4 +1,4 @@
-(ns sicp-clj.ch2.exc7 )
+(ns sicp-clj.ch2.7 )
 
 (defn make-interval [a b]
   (list (min a b) (max a b)))
