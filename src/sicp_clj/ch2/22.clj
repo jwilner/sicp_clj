@@ -1,0 +1,3 @@
+(ns sicp-clj.ch2.22)
+
+;; Because cons requires the list as its second argument?...
