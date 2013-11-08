@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_40
-  (:use [sicp-clj.exc_1_3 :only [square]]
-        [sicp-clj.example_newtons_method :only [newtons-method cube]]))
+(ns sicp-clj.ch1.40
+  (:use [sicp-clj.ch1.3 :only [square]]
+        [sicp-clj.ch1.newtons_method :only [newtons-method cube]]))
 
 (defn cubic [a b c]
   #(+ (cube %) (* a (square %)) (* b %) c))

@@ -1,6 +1,6 @@
-(ns sicp-clj.example_abstractions_first_class_procedures
-  (:use [sicp-clj.example_average_damping :only [avg-damp]]
-        [sicp-clj.example_fixed_point :only [fixed-point]]))
+(ns sicp-clj.ch1.abstractions_first_class_procedures
+  (:use [sicp-clj.ch1.average_damping :only [avg-damp]]
+        [sicp-clj.ch1.fixed_point :only [fixed-point]]))
 
 (defn fixed-point-of-transform [g transform guess]
   (fixed-point (transform g) guess))

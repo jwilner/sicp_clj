@@ -1,4 +1,4 @@
-(ns sicp-clj.example_cnting_change )
+(ns sicp-clj.ch1.cnting_change )
 
 (defn first-denomination [kinds-of-coins]
   (cond 

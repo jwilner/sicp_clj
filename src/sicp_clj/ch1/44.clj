@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_44
-  (:use [sicp-clj.exc_1_43 :only [repeated]]
-        [sicp-clj.example_newtons_method :only [dx]]))
+(ns sicp-clj.ch1.44
+  (:use [sicp-clj.ch1.43 :only [repeated]]
+        [sicp-clj.ch1.newtons_method :only [dx]]))
 
 (defn smooth [f]
   #(/ (+ (f %) (f (- % dx)) (f (+ % dx)))

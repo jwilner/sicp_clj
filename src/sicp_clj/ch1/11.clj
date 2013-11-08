@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_11)
+(ns sicp-clj.ch1.11)
 
 (defn f [n]
   (if (< n 3)

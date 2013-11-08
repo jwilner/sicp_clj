@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_6)
+(ns sicp-clj.ch1.6)
 
 ;;Exercise 1.6
 (defn new-if [predicate then-clause else-clause]

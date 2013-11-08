@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_38
-  (:use [sicp-clj.exc_1_37 :only [cont-frac always-one]]))
+(ns sicp-clj.ch1.38
+  (:use [sicp-clj.ch1.37 :only [cont-frac always-one]]))
 
 (defn e-series-den [n]
   (if (= 2 (mod n 3))

@@ -1,4 +1,4 @@
-(ns sicp-clj.example_fixed_point 
+(ns sicp-clj.ch1.fixed_point 
   (:use [clojure.math.numeric-tower :as math]))
 
 (def tolerance 0.00001)

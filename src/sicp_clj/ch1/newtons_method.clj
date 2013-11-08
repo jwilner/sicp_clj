@@ -1,6 +1,6 @@
-(ns sicp-clj.example_newtons_method 
-  (:use [sicp-clj.example_fixed_point :only [fixed-point]]
-        [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.newtons_method 
+  (:use [sicp-clj.ch1.fixed_point :only [fixed-point]]
+        [sicp-clj.ch1.3 :only [square]]))
 
 (def dx 0.00001)
 

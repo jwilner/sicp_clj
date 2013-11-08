@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_43
-  (:use [sicp-clj.exc_1_42 :only [compose]]
-        [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.43
+  (:use [sicp-clj.ch1.42 :only [compose]]
+        [sicp-clj.ch1.3 :only [square]]))
 
 (defn repeated [f n]
   (fn [x]

@@ -1,6 +1,6 @@
-(ns sicp-clj.example_half_interval_method
+(ns sicp-clj.ch1.half_interval_method
   (:require [clojure.math.numeric-tower :as math])
-  (:use [sicp-clj.exc_1_15 :only [sine]]))
+  (:use [sicp-clj.ch1.15 :only [sine]]))
 
 (defn close-enough? [x y]
   (< (math/abs (- x y)) 0.0001))

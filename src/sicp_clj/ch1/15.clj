@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_15 
-  (:use [sicp-clj.exc_1_5 :only [abs]]))
+(ns sicp-clj.ch1.15 
+  (:use [sicp-clj.ch1.5 :only [abs]]))
 
 (defn cube [x]
   (* x x x))

@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_29
-  (:use [sicp-clj.example_procedures_as_args :only [integral cube]]))
+(ns sicp-clj.ch1.29
+  (:use [sicp-clj.ch1.procedures_as_args :only [integral cube]]))
 
 (integral cube 0 1 0.01)
 (integral cube 0 1 0.001)

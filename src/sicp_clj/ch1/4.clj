@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_4 )
+(ns sicp-clj.ch1.4 )
 
 ;; Exercise 1.4
 (defn a-plus-abs-b [a b]

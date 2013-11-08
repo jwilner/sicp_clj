@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_19 
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.19 
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 (defn fib 
   "Calculates a fib number in log n time thanks to some obscure math stuff"

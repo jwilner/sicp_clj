@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_12)
+(ns sicp-clj.ch1.12)
 
 (defn pascal [x y]
   (cond

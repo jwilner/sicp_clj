@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_3)
+(ns sicp-clj.ch1.3)
 
 (defn square [x] (* x x))
 (defn square-two [x y] (+ (square x) (square y)))

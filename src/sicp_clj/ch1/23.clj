@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_23
-  (:use [sicp-clj.exc_1_21 :only [smallest-divisor]]
-        [sicp-clj.exc_1_22 :only [prime-search-wrap]]))
+(ns sicp-clj.ch1.23
+  (:use [sicp-clj.ch1.21 :only [smallest-divisor]]
+        [sicp-clj.ch1.22 :only [prime-search-wrap]]))
 
 (defn next-test-divisor
   "For somewhat optimizing series by only providing odds"

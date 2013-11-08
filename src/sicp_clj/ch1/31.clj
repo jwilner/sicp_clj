@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_31 )
+(ns sicp-clj.ch1.31 )
 
 (defn product-iter [func a my-next b]
   (loop [n a

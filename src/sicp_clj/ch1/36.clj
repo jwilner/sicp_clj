@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_36
+(ns sicp-clj.ch1.36
   (:import (java.lang.Math)))
 
 (def tolerance 0.00001)

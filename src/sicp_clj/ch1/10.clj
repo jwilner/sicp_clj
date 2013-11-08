@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_10 )
+(ns sicp-clj.ch1.10 )
 
 
 (defn A [x y]

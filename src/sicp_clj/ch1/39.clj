@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_39
-  (:use [sicp-clj.exc_1_37 :only [cont-frac]]
-        [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.39
+  (:use [sicp-clj.ch1.37 :only [cont-frac]]
+        [sicp-clj.ch1.3 :only [square]]))
 
 (defn tan-cf [x k]
   (let [sqed (square x)]

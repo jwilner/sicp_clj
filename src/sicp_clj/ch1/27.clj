@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_27 
-  (:use [sicp-clj.example_fermat_test :only [expmod]]
-        [sicp-clj.exc_1_21 :only [smallest-divisor]]))
+(ns sicp-clj.ch1.27 
+  (:use [sicp-clj.ch1.fermat_test :only [expmod]]
+        [sicp-clj.ch1.21 :only [smallest-divisor]]))
 
 (def poss-cars '(561 1105 1729 2465 2821 6601))
 

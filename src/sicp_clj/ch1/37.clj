@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_37)
+(ns sicp-clj.ch1.37)
 
 (defn always-one [x] 1.0)
 

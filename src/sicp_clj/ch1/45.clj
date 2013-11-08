@@ -1,12 +1,12 @@
-(ns sicp-clj.exc_1_45 
+(ns sicp-clj.ch1.45 
   (:import [java.lang.Math])
   (:use [clojure.math.numeric-tower :only [expt]]
-        [sicp-clj.exc_1_43 :only [repeat-denis
+        [sicp-clj.ch1.43 :only [repeat-denis
                                   repeated-with-compose 
                                   repeated 
                                   repeated-sicp-style]]
-        [sicp-clj.example_average_damping :only [avg-damp]]
-        [sicp-clj.example_fixed_point :only [fixed-point]]))
+        [sicp-clj.ch1.average_damping :only [avg-damp]]
+        [sicp-clj.ch1.fixed_point :only [fixed-point]]))
 
 (defn sq-root [n]
   (fixed-point (repeated-with-compose (avg-damp #(/ n %) )

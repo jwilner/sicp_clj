@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_22
-  (:use [sicp-clj.exc_1_21 :only [smallest-divisor]]
-        [sicp-clj.exc_1_16 :only [fast-expt]]))
+(ns sicp-clj.ch1.22
+  (:use [sicp-clj.ch1.21 :only [smallest-divisor]]
+        [sicp-clj.ch1.16 :only [fast-expt]]))
 
 (defn naive-prime?
   "Naive implementation of priming process"

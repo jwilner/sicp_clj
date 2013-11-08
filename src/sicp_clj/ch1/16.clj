@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_16
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.16
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 (defn fast-expt 
     "exponentiation in constant space and logarithmic time"

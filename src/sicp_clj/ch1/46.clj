@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_46 
+(ns sicp-clj.ch1.46 
   (:import [java.lang.Math]))
 
 (defn iterative-improve

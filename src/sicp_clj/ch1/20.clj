@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_20 
-  (:use [sicp-clj.exc_1_6 :only [new-if]]))
+(ns sicp-clj.ch1.20 
+  (:use [sicp-clj.ch1.6 :only [new-if]]))
 
 (defn euclid-gcd 
   "Traditional GCD implementation"

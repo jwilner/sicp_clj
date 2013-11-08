@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_5
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.5
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 ;; Exercise 1.5
 

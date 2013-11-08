@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_42
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.42
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 (defn compose [f g]
   #(f (g %)))

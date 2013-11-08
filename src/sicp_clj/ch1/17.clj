@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_17 )
+(ns sicp-clj.ch1.17 )
 
 (defn dubble [n] (+ n n))
 (defn halve [n] (/ n 2))

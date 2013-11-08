@@ -1,4 +1,4 @@
-(ns sicp-clj.example_procedures_as_args )
+(ns sicp-clj.ch1.procedures_as_args )
 
 (defn my-sum
   "Higher order suming of a series"

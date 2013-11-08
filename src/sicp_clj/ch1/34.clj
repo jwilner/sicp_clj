@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_34 )
+(ns sicp-clj.ch1.34 )
 
 (defn f [g]
   (g 2))

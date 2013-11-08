@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_25)
+(ns sicp-clj.ch1.25)
 
 (mod (fast-expt 1 4 5) 3)
 (mod (fast-expt 4 4 4) 3)

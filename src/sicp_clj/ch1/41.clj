@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_41)
+(ns sicp-clj.ch1.41)
 
 (defn double-apply [f]
   #(f (f %)))

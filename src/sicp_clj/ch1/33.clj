@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_33 
-  (:use [sicp-clj.exc_1_22 :only [naive-prime?]]
-        [sicp-clj.exc_1_20 :only [euclid-gcd]]))
+(ns sicp-clj.ch1.33 
+  (:use [sicp-clj.ch1.22 :only [naive-prime?]]
+        [sicp-clj.ch1.20 :only [euclid-gcd]]))
 
 (defn acc-filter 
   [combiner my-filter null-value term a my-next b]

@@ -1,5 +1,5 @@
-(ns sicp-clj.example_average_damping
-  (:use [sicp-clj.example_fixed_point :only [fixed-point]]))
+(ns sicp-clj.ch1.average_damping
+  (:use [sicp-clj.ch1.fixed_point :only [fixed-point]]))
 
 (defn avg-damp [f]
   #(/ (+ (f %) %) 2))

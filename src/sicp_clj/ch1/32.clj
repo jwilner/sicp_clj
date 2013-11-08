@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_32 )
+(ns sicp-clj.ch1.32 )
 
 
 (defn accumulate 

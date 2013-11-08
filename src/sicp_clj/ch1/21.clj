@@ -1,5 +1,5 @@
-(ns sicp-clj.exc_1_21
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.21
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 (defn smallest-divisor
   "This function finds the smallest factor of a given number"

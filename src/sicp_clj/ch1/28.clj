@@ -1,6 +1,6 @@
-(ns sicp-clj.exc_1_28 
-  (:use [sicp-clj.exc_1_27 :only [poss-cars]]
-        [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.28 
+  (:use [sicp-clj.ch1.27 :only [poss-cars]]
+        [sicp-clj.ch1.3 :only [square]]))
 
 (defn trivial-test 
   [a n]

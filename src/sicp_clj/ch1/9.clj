@@ -1,4 +1,4 @@
-(ns sicp-clj.exc_1_9)
+(ns sicp-clj.ch1.9)
 
 ;; Exercise 1.9
 

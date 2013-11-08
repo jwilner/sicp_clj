@@ -1,5 +1,5 @@
-(ns sicp-clj.example_fermat_test 
-  (:use [sicp-clj.exc_1_3 :only [square]]))
+(ns sicp-clj.ch1.fermat_test 
+  (:use [sicp-clj.ch1.3 :only [square]]))
 
 (defn expmod
   "computes the remainder for 'base' to the 'exp' modulo 'm' in 
