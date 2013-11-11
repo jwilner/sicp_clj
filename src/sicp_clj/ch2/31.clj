@@ -6,6 +6,9 @@
           (f  %))
        tree))
 
+(map-square-tree [tree]
+   (map-tree tree #(* % %)))
+
 (map-tree (list 1
                 (list 2
                       (list 3 4)

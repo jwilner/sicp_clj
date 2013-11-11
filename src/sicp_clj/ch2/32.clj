@@ -3,7 +3,7 @@
 
 (defn subsets [s]
   (if (nil? s) 
-    '()
+    (list '())
     (let [remaining (subsets (next s))]
       (append remaining 
               (map #(cons (first s) 
