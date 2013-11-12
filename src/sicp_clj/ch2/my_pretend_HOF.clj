@@ -6,9 +6,13 @@
   (if (not (seq a-seq))
     initial
     (op (first a-seq)
-        (accumulate op initial (rest a-seq)))))
+        (accumulate op 
+                    initial 
+                    (rest a-seq)))))
 
-(accumulate + 0 '(1 2 3 4 5))
+(accumulate + 
+            0 
+            '(1 2 3 4 5))
 
 (defn my-filter
   [predicate a-seq]

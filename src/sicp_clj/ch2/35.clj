@@ -7,7 +7,8 @@
   [tree]
   (accumulate +
               0
-              (my-map return-1 (enumerate-tree tree))))
+              (my-map #(1) 
+                      (enumerate-tree tree))))
 
 (enumerate-tree '(1 2 3 4))
 (enumerate-tree a-tree)
