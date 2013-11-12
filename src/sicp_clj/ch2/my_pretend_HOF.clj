@@ -21,3 +21,4 @@
 (my-filter odd? '(1 2 3 4 5))
 
 (def enumerate-tree fringe3)
+(enumerate-tree '(1 2 3 4))

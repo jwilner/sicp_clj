@@ -1,5 +1,5 @@
 (ns sicp-clj.ch2.33
-  (:use [sicp-clj.ch2.my-pretend-HOF :only [accummulate]]))
+  (:use [sicp-clj.ch2.my-pretend-HOF :only [accumulate]]))
 
 (defn my-map
   [p a-seq]
@@ -11,7 +11,7 @@
   [seq1 seq2]
   (accumulate cons
               seq2
-              se1))
+              seq1))
 
 (defn length
   [a-seq]
