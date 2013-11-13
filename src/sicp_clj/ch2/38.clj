@@ -5,7 +5,7 @@
   [op init a-seq]
   (loop [result init
          remaining a-seq]
-    (if (empty? remaining)
+    (if-not (seq remaining)
       result
       (recur (op result (first remaining))
              (rest remaining)))))

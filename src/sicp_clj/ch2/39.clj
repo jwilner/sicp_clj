@@ -16,7 +16,7 @@
   [a-seq]
   (fold-left #(cons %2 
                     %1) 
-             nil 
+             () 
              a-seq))
 
 (left-reverse test-seq)

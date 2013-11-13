@@ -3,17 +3,16 @@
 
 (defn accumulate-n
   [op init seqs]
-  (if (empty? seqs)
-    nil
+  (if-not (seq (first seqs))
+    ()
     (cons (accumulate op 
                       init 
                       (map first 
                            seqs))
           (accumulate-n op 
-                        init 
-                        (remove empty?
-                                (map rest 
-                                     seqs))))))
+                        init
+                        (map rest 
+                             seqs)))))
 
 (def a-n-seq '((1 2 3)
                (4 5 6)
