@@ -14,16 +14,13 @@
 (def empty-board ())
 
 (defn safe? [k positions]
-  (let [in-same-col #(= k (get-col %))
-        a-row (get-row (first (filter in-same-col
-                                      positions)))
-        others (remove in-same-col 
-                       positions)] 
+  (let [a-row (get-row (first positions))
+        others (rest positions)] 
     (not-any? (fn [b]
                 (let [b-row (get-row b)]
                    (or (= a-row b-row) ;; horizontals
-                   (= (Math/abs (- a-row b-row)) ;; diagonals
-                      (Math/abs (- k (get-col b)))))))
+                       (= (Math/abs (- a-row b-row)) ;; diagonals
+                          (Math/abs (- k (get-col b)))))))
               others)))
 
 (defn adjoin-position [new-row k rest-of-queens]
